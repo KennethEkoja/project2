@@ -1,0 +1,299 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/* MY CODES*/
+
+body{
+    background-color: rgb(234, 231, 236);
+}
+
+*{
+    text-decoration: none;
+}
+
+.hero-sec {
+    width:100%;
+    height:300px;
+    background-image:url(image/heavy-machinery.jpg) ;
+    display:flex;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center ;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size:23px !important;
+    line-height:4px;
+    color:red;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:50;
+    padding-bottom:65px;
+    padding-left: 12px;
+}
+ 
+.hero-sec p {
+    font-size:10px !important;
+    line-height:15px !important;
+    color:#45e226;
+    font-family: 'Time`s New Roman', Times, serif;
+    padding-bottom:16px !important;
+    text-align: center;
+}
+
+
+.hero-sec a {
+    border: solid 6px #008000;
+    font-size: 9px !important;
+    border-radius:17px ;
+    background-color: #008000;
+    color:white;
+}
+
+.container {
+    display:grid;
+    background-color: rgb(228, 222, 222);
+    gap:12px;
+
+}
+.column {
+    padding:34px;
+    border:solid 10px white;
+}
+
+.tract1 {
+    background-image:url(image/excava.jfif);
+    width: 180px;
+    height:95px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    align-items: center;
+}
+
+.tract2 {
+    background-image:url(image/tractor.jfif);
+    width: 180px;
+    height:95px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+}
+
+.tract3 {
+    background-image:url(image/bullw.jfif);
+    width: 180px;
+    height:95px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+
+}
+.container h2 {
+    font-size:15px;
+    color:red ;
+    padding-top:8px ;
+}
+
+.container p {
+    font-size: 20px;
+    line-height:18px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contacts p {
+    font-size:15px;
+    
+
+}
+footer {
+    margin:2px 23px;
+    background-color: #ff9;
+}
+
+/*pc*/
+@media only screen and (min-width: 1000px) {
+    .container {
+        display:flex;
+        gap:8px;
+    
+    }
+    .column {
+        padding:35px;
+        width:100px;
+        flex:3;
+    }
+   .hero-sec {
+    width:100% ;
+    height:350px ;
+}
+
+h1 {
+    font-size:39px;
+    line-height:23px;
+    color:red;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    padding-bottom:34px;
+}
+ 
+.hero-sec p {
+    font-size:23px;
+    line-height:22px;
+    color:rgb(69, 226, 38);
+    font-family: 'Time`s New Roman', Times, serif;
+    padding-bottom:12px;
+
+
+}
+
+.hero-sec a {
+    border: solid 8px #008000;
+    font-size: 18px;
+    border-radius:17px ;
+}
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        display:flex;
+        gap:8px;
+    
+    }
+    .column {
+        padding:35px;
+        width:100px;
+        flex:3;
+    }
+   
+
+h1 {
+    font-size:29px;
+    line-height:23px;
+
+}
+ 
+.hero-sec p {
+    font-size:18px;
+    line-height:22px;
+    color:#45e226;
+}
+
+.hero-sec a {
+    font-size: 15px;
+    border-radius:17px ;
+}
+
+.container h2 {
+    font-size:16px;
+}
+
+.container p {
+    font-size: 10px;
+    line-height:12px ;
+}
+
+}
